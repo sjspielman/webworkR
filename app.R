@@ -17,7 +17,7 @@ ui <- fluidPage(theme = shinytheme("united"),
   br(),br(),
 
   p("Please use this", 
-    a("example template",href="https://github.com/sjspielman/webworkR/master/blob/template.txt"), 
+    a("example template",href="https://raw.githubusercontent.com/sjspielman/webworkR/main/template.txt"), 
     "to format your questions as text files."),
   br(),br(),
    # sidebarPanel(
