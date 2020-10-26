@@ -1,0 +1,16 @@
+###################################
+# Display the Problem
+###################################
+TEXT(beginproblem);
+BEGIN_TEXT
+$PAR 
+\{ $mc->print_q() \}
+\{ $mc->print_a() \}
+END_TEXT
+
+###################################
+# Check the Answers
+###################################
+ANS( radio_cmp($mc->correct_ans) );
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.;
