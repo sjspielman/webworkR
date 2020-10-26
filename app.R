@@ -12,13 +12,11 @@ ui <- fluidPage(theme = shinytheme("united"),
   # Application title
   titlePanel("webworkR: Format your WebWork questions"),
   br(),
-  p("Written by", a("Stephanie J. Spielman, Ph.D.",href="https://spielmanlab.github.io"), "and released under GPL-3 License. Source code:", 
-    a("https://github.com/sjspielman/webworkR",href="https://github.com/sjspielman/webworkR")),
-  br(),br(),
-
-  p("Please use this", 
+  p("Written by", a("Stephanie J. Spielman, Ph.D.",href="https://spielmanlab.github.io"), "and released under GPL-3 License. Source code is available from", 
+    a("https://github.com/sjspielman/webworkR",href="https://github.com/sjspielman/webworkR"), 
+    ". Please use this", 
     a("example template",href="https://raw.githubusercontent.com/sjspielman/webworkR/main/template.txt"), 
-    "to format your questions as text files."),
+    "to format your questions as text files. When saving your text files for upload, make sure they are saved with 'UTF-8' encoding, aka no fancy symbols!"),
   br(),br(),
    # sidebarPanel(
       fileInput("raw_questions", "Upload your questions as a text file using the format described above.",
