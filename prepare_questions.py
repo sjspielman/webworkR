@@ -24,7 +24,7 @@ def format_questions(input_file, output_path):
     with open("footer_text.txt", "r") as f:
         footer = f.read()     
 
-    with open(input_file, "r", encoding='utf-8') as f:
+    with open(input_file, "r", encoding='utf-8-sig') as f:
         lines = f.read()
         lines = re.sub("\r", "\n", lines)
 
